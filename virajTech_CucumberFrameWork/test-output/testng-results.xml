@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-19T21:11:31 IST" name="Default suite" finished-at="2024-06-19T21:11:55 IST" duration-ms="23825">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNgRunner@15043a2f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-06-19T21:11:31 IST" name="Default test" finished-at="2024-06-19T21:11:55 IST" duration-ms="23825">
+      <class name="CucumberOptions.TestNgRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:CucumberOptions.TestNgRunner@15043a2f]" started-at="2024-06-19T21:11:31 IST" name="setUpClass" finished-at="2024-06-19T21:11:31 IST" duration-ms="604" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3ee69ad8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNgRunner@15043a2f]" started-at="2024-06-19T21:11:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-19T21:11:55 IST" duration-ms="23079" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User is registering for IT Jobs and validating the sumbission"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registering for IT jobs"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.setContextDriver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.setContextDriver" is null
+at pageObjects.ItRegistrationObjects.clickOnCloseButton(ItRegistrationObjects.java:25)
+at featureStepDefinitions.ItRegisterLandingPage.user_is_landed_up_on_it_jobs_registraion_page(ItRegisterLandingPage.java:50)
+at ✽.user is landed up on It jobs registraion page(file:///C:/Users/User/eclipse-workspace/virajTechEndToEndScenarios/src/test/java/features/ItRegistrationAndValidation.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:CucumberOptions.TestNgRunner@15043a2f]" started-at="2024-06-19T21:11:55 IST" name="tearDownClass" finished-at="2024-06-19T21:11:55 IST" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- CucumberOptions.TestNgRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
